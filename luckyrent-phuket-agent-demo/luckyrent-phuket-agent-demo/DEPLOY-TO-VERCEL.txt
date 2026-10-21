@@ -1,0 +1,22 @@
+DEPLOY TO VERCEL (Next.js)
+==========================
+Why the previous deploy showed 404 NOT_FOUND:
+The old zip put the app inside a sub-folder (luckyrent-demo/). If that
+zip's contents are uploaded to GitHub/Vercel as-is, package.json is NOT at
+the repository root, so Vercel finds no Next.js app and serves 404.
+
+Correct way:
+1) Unzip. Open the folder "luckyrent-phuket-agent-demo".
+2) package.json, next.config.ts, app/ and vercel.json must be at the TOP
+   LEVEL of your GitHub repository (not inside another folder).
+   Upload the CONTENTS of this folder, not the folder itself.
+3) In Vercel: Add New > Project > import the repo.
+   Framework Preset must say "Next.js". Root Directory: leave empty ("./").
+   Build/Output settings: leave defaults. No environment variables needed.
+4) Deploy.
+
+If you already imported the repo with the app in a sub-folder, either move
+the files to the repo root, or set Project Settings > General >
+Root Directory to that sub-folder, then redeploy.
+
+Local check:  npm install && npm run build && npm start

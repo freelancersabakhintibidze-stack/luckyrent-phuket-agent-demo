@@ -1,0 +1,354 @@
+{
+  "en": {
+    "greeting": "Sawadee. I am the Luckyrent Phuket booking agent (demo build: scripted answers from their public site only, nothing invented). Staff take bookings 09:00-21:00; I answer 24/7. Pick a question below or type your own.",
+    "unmatched": "I answer only from Luckyrent's published data, so I will not guess. Here is what I can do right now:",
+    "chips": {
+      "price": "How much is a Scoopy for two weeks?",
+      "delivery": "Is delivery to Bang Tao really free? And what is the deposit?",
+      "booking": "I want to book a bike"
+    },
+    "priceAnswer": "{model}, {days} days: {total} total ({daily} ฿/day). Helmet x2, raincoats x2, phone holder and rider+passenger insurance included. Delivery to your place about 60 minutes. (DEMO)",
+    "deliveryAnswer": "Delivery is free all over Phuket; in Bang Tao they promise the bike in about 60 minutes (their Bang Tao page). The deposit amount is not published on their site, and I will not invent one. Deposit terms are confirmed by the manager at booking; I have added it to your booking card as an open question. (DEMO)",
+    "typing": "agent is typing",
+    "caption": "answered in {t} s. Outside staff hours 09:00-21:00 this reply would have waited until morning (DEMO)",
+    "composerPlaceholder": "Type a question: price, delivery + deposit, booking",
+    "send": "Send",
+    "restart": "Ask something else",
+    "keywords": {
+      "price": [
+        "price",
+        "cost",
+        "how much",
+        "rate",
+        "baht",
+        "฿",
+        "week",
+        "days"
+      ],
+      "delivery": [
+        "deposit",
+        "delivery",
+        "deliver",
+        "free",
+        "how long",
+        "zone"
+      ],
+      "booking": [
+        "book",
+        "reserve",
+        "rent",
+        "order",
+        "want"
+      ]
+    },
+    "booking": {
+      "intro": "Let us book. I will collect zone, dates and model, check availability (SAMPLE stock in this demo) and hand the manager one finished booking card. Nothing is sent to Luckyrent from this demo. (DEMO)",
+      "askZone": "Which zone do you need the bike in?",
+      "askDates": "Pick your dates. Earliest start is tomorrow (Phuket time); the end date is the return day and is not counted as a rental day.",
+      "askModel": "Which model? The price shown is the real 7-day tier from their site.",
+      "datesInvalid": "Please choose a start date of tomorrow or later, and an end date after the start date.",
+      "dateStart": "start",
+      "dateEnd": "end (return day)",
+      "dateHint": "min: tomorrow, Phuket time",
+      "confirmDates": "Confirm dates",
+      "conflict": "{model} has no free units in {zone} for {start} → {end}. Conflict with sample bookings {refs} (SAMPLE stock, simulated for demonstration). Free in {zone} on these dates: {alts}. (DEMO)",
+      "noAlts": "No model is free in {zone} on these dates in the SAMPLE stock. Try other dates. In production a human would take over here. (DEMO)",
+      "handedOk": "Done. The finished booking is now in the owner inbox, with an audit row. The manager gets the card and the open questions, never the raw chat.",
+      "inboxSummary": "Demo chat handover: {model}, {zone}, {start} → {end} ({days} d, {total}).",
+      "inboxReply": "Finished booking card. Open question: deposit terms (manager confirms).",
+      "daysShort": "d"
+    },
+    "zones": {
+      "bang-tao": "Bang Tao",
+      "kamala": "Kamala",
+      "rawai": "Rawai",
+      "phuket": "Anywhere in Phuket"
+    },
+    "card": {
+      "finished": "FINISHED BOOKING",
+      "ref": "Ref",
+      "zone": "Zone",
+      "model": "Model",
+      "dates": "Dates",
+      "days": "Days",
+      "total": "Total",
+      "included": "Included",
+      "delivery": "Delivery window",
+      "openQuestions": "Open questions",
+      "hand": "Hand to manager",
+      "handed": "Handed to manager",
+      "openInbox": "Open the owner inbox",
+      "demoReason": "DEMO · simulated for demonstration",
+      "formulaNote": "formula",
+      "includedValue": "2 helmets · 2 raincoats · phone holder · insurance for rider and passenger (their homepage)",
+      "deliveryValue": "about 60 minutes to your place; delivery all over Phuket (their Bang Tao page + homepage)",
+      "depositQuestion": "Deposit amount and terms: confirmed by the manager at booking (not published on their site)."
+    },
+    "askPriceQuestion": "How much is {model} for {days} days?"
+  },
+  "ru": {
+    "greeting": "Савадди. Я агент бронирования Luckyrent Phuket (демо: ответы только по открытым данным их сайта, ничего не выдумываю). Сотрудники принимают брони 09:00-21:00; я отвечаю 24/7. Выберите вопрос ниже или напишите свой.",
+    "unmatched": "Я отвечаю только по опубликованным данным Luckyrent и не угадываю. Вот что я могу сейчас:",
+    "chips": {
+      "price": "Сколько скутер на две недели?",
+      "delivery": "Доставка в Банг Тао правда бесплатная? И какой депозит?",
+      "booking": "Хочу забронировать байк"
+    },
+    "priceAnswer": "{model}, {days} дней: {total} ({daily} ฿/день). Два шлема, два дождевика, держатель телефона и страховка водителя+пассажира включены. Доставка около 60 минут. (ДЕМО)",
+    "deliveryAnswer": "Доставка бесплатная по всему Пхукету; в Банг Тао байк обещают привезти примерно за 60 минут (их страница Bang Tao). Сумма депозита не опубликована на их сайте, и я не буду ее выдумывать. Условия депозита подтверждает менеджер при бронировании; я добавил это в вашу карточку брони как открытый вопрос. (ДЕМО)",
+    "typing": "агент печатает",
+    "caption": "ответ за {t} с. Вне рабочих часов 09:00-21:00 этот ответ ждал бы до утра (ДЕМО)",
+    "composerPlaceholder": "Напишите вопрос: цена, доставка и депозит, бронирование",
+    "send": "Отправить",
+    "restart": "Спросить еще",
+    "keywords": {
+      "price": [
+        "цена",
+        "цену",
+        "сколько",
+        "стоимость",
+        "тариф",
+        "бат",
+        "฿",
+        "недел",
+        "дней",
+        "день"
+      ],
+      "delivery": [
+        "депозит",
+        "залог",
+        "доставка",
+        "доставку",
+        "бесплатно",
+        "зона",
+        "привезут"
+      ],
+      "booking": [
+        "забронировать",
+        "бронь",
+        "бронирование",
+        "аренда",
+        "арендовать",
+        "хочу"
+      ]
+    },
+    "booking": {
+      "intro": "Забронируем. Я соберу зону, даты и модель, проверю наличие (в демо это SAMPLE-сток) и передам менеджеру одну готовую карточку брони. Из этого демо ничего не отправляется в Luckyrent. (ДЕМО)",
+      "askZone": "В какую зону нужен байк?",
+      "askDates": "Выберите даты. Самая ранняя дата начала: завтра (по времени Пхукета); дата окончания: день возврата, она не оплачивается.",
+      "askModel": "Какая модель? Показан реальный тариф за 7 дней с их сайта.",
+      "datesInvalid": "Пожалуйста, выберите дату начала не раньше завтра и дату окончания позже начала.",
+      "dateStart": "начало",
+      "dateEnd": "конец (день возврата)",
+      "dateHint": "минимум: завтра по времени Пхукета",
+      "confirmDates": "Подтвердить даты",
+      "conflict": "{model}: нет свободных байков в зоне {zone} на {start} → {end}. Конфликт с демо-бронями {refs} (SAMPLE-сток, симуляция). Свободны в {zone} на эти даты: {alts}. (ДЕМО)",
+      "noAlts": "На эти даты в зоне {zone} нет свободных моделей в SAMPLE-стоке. Попробуйте другие даты. В продакшене здесь подключился бы человек. (ДЕМО)",
+      "handedOk": "Готово. Бронь теперь во входящих владельца, с записью в аудит-логе. Менеджер получает карточку и открытые вопросы, а не сырую переписку.",
+      "inboxSummary": "Передача из демо-чата: {model}, {zone}, {start} → {end} ({days} дн., {total}).",
+      "inboxReply": "Готовая карточка брони. Открытый вопрос: условия депозита (подтверждает менеджер).",
+      "daysShort": "дн."
+    },
+    "zones": {
+      "bang-tao": "Банг Тао",
+      "kamala": "Камала",
+      "rawai": "Раваи",
+      "phuket": "Всегда по Пхукету"
+    },
+    "card": {
+      "finished": "ГОТОВАЯ БРОНЬ",
+      "ref": "№",
+      "zone": "Зона",
+      "model": "Модель",
+      "dates": "Даты",
+      "days": "Дней",
+      "total": "Итого",
+      "included": "Включено",
+      "delivery": "Окно доставки",
+      "openQuestions": "Открытые вопросы",
+      "hand": "Передать менеджеру",
+      "handed": "Передано менеджеру",
+      "openInbox": "Открыть панель владельца",
+      "demoReason": "ДЕМО · симуляция для демонстрации",
+      "formulaNote": "формула",
+      "includedValue": "2 шлема · 2 дождевика · держатель телефона · страховка водителя и пассажира (их сайт)",
+      "deliveryValue": "около 60 минут до вашего адреса; доставка по всему Пхукету (их страница Bang Tao + главная)",
+      "depositQuestion": "Сумма и условия депозита: подтверждает менеджер при бронировании (не опубликовано на их сайте)."
+    },
+    "askPriceQuestion": "Сколько стоит {model} на {days} дней?"
+  },
+  "ua": {
+    "greeting": "Савадді. Я агент бронювання Luckyrent Phuket (демо: відповіді лише за відкритими даними їхнього сайту, нічого не вигадую). Команда приймає бронювання 09:00-21:00; я відповідаю 24/7. Оберіть питання нижче або напишіть своє.",
+    "unmatched": "Я відповідаю лише за опублікованими даними Luckyrent і не вгадую. Ось що я можу зараз:",
+    "chips": {
+      "price": "Скільки скутер на два тижні?",
+      "delivery": "Доставка в Банг Тао справді безкоштовна? І який депозит?",
+      "booking": "Хочу забронювати байк"
+    },
+    "priceAnswer": "{model}, {days} днів: {total} ({daily} ฿/день). Два шоломи, два дощовики, тримач телефона та страховка водія й пасажира включені. Доставка близько 60 хвилин. (ДЕМО)",
+    "deliveryAnswer": "Доставка безкоштовна по всьому Пхукету; у Банг Тао байк обіцяють привезти приблизно за 60 хвилин (їхня сторінка Bang Tao). Сума депозиту не опублікована на їхньому сайті, і я не буду її вигадувати. Умови депозиту підтверджує менеджер під час бронювання; я додав це до вашої картки бронювання як відкрите питання. (ДЕМО)",
+    "typing": "агент друкує",
+    "caption": "відповідь за {t} с. Поза робочими годинами 09:00-21:00 ця відповідь чекала б до ранку (ДЕМО)",
+    "composerPlaceholder": "Напишіть питання: ціна, доставка й депозит, бронювання",
+    "send": "Надіслати",
+    "restart": "Питати ще",
+    "keywords": {
+      "price": [
+        "ціна",
+        "ціну",
+        "скільки",
+        "вартість",
+        "тариф",
+        "бат",
+        "฿",
+        "тижн",
+        "днів",
+        "день"
+      ],
+      "delivery": [
+        "депозит",
+        "застава",
+        "доставка",
+        "доставку",
+        "безкоштовно",
+        "зона",
+        "привезуть"
+      ],
+      "booking": [
+        "забронювати",
+        "бронювання",
+        "бронь",
+        "оренда",
+        "орендувати",
+        "хочу"
+      ]
+    },
+    "booking": {
+      "intro": "Забронюємо. Я зібраю зону, дати й модель, перевірю наявність (у демо це SAMPLE-сток) і передам менеджеру одну готову картку бронювання. Із цього демо нічого не надсилається в Luckyrent. (ДЕМО)",
+      "askZone": "В яку зону потрібен байк?",
+      "askDates": "Оберіть дати. Найраніша дата початку: завтра (за часом Пхукету); дата завершення: день повернення, вона не оплачується.",
+      "askModel": "Яка модель? Показано реальний тариф за 7 днів з їхнього сайту.",
+      "datesInvalid": "Будь ласка, оберіть дату початку не раніше завтра і дату завершення пізнішу за початок.",
+      "dateStart": "початок",
+      "dateEnd": "кінець (день повернення)",
+      "dateHint": "мінімум: завтра за часом Пхукету",
+      "confirmDates": "Підтвердити дати",
+      "conflict": "{model}: немає вільних байків у зоні {zone} на {start} → {end}. Конфлікт із демо-бронюваннями {refs} (SAMPLE-сток, симуляція). Вільні у {zone} на ці дати: {alts}. (ДЕМО)",
+      "noAlts": "На ці дати у зоні {zone} немає вільних моделей у SAMPLE-стоці. Спробуйте інші дати. У продакшені тут підключилася б людина. (ДЕМО)",
+      "handedOk": "Готово. Бронювання тепер у вхідних власника, із записом в аудит-лозі. Менеджер отримує картку й відкриті питання, а не сире листування.",
+      "inboxSummary": "Передача з демо-чату: {model}, {zone}, {start} → {end} ({days} дн., {total}).",
+      "inboxReply": "Готова картка бронювання. Відкрите питання: умови депозиту (підтверджує менеджер).",
+      "daysShort": "дн."
+    },
+    "zones": {
+      "bang-tao": "Банг Тао",
+      "kamala": "Камала",
+      "rawai": "Раваї",
+      "phuket": "Будь-де на Пхукеті"
+    },
+    "card": {
+      "finished": "ГОТОВЕ БРОНЮВАННЯ",
+      "ref": "№",
+      "zone": "Зона",
+      "model": "Модель",
+      "dates": "Дати",
+      "days": "Днів",
+      "total": "Разом",
+      "included": "Включено",
+      "delivery": "Вікно доставки",
+      "openQuestions": "Відкриті питання",
+      "hand": "Передати менеджеру",
+      "handed": "Передано менеджеру",
+      "openInbox": "Відкрити консоль власника",
+      "demoReason": "ДЕМО · симуляція для демонстрації",
+      "formulaNote": "формула",
+      "includedValue": "2 шоломи · 2 дощовики · тримач телефона · страховка водія та пасажира (їхній сайт)",
+      "deliveryValue": "близько 60 хвилин до вашої адреси; доставка по всьому Пхукету (їхня сторінка Bang Tao + головна)",
+      "depositQuestion": "Сума та умови депозиту: підтверджує менеджер під час бронювання (не опубліковано на їхньому сайті)."
+    },
+    "askPriceQuestion": "Скільки коштує {model} на {days} днів?"
+  },
+  "th": {
+    "greeting": "สวัสดีครับ ผมคือเอเจนต์จองรถของ Luckyrent Phuket (เดโม: ตอบจากข้อมูลสาธารณะบนเว็บของเขาเท่านั้น ไม่เดาข้อมูล) ทีมงานรับจอง 09:00-21:00 ผมตอบตลอด 24 ชม. เลือกคำถามด้านล่างหรือพิมพ์เองได้เลย",
+    "unmatched": "ผมตอบเฉพาะจากข้อมูลที่ Luckyrent เผยแพร่ ไม่เดาข้อมูล สิ่งที่ผมช่วยได้ตอนนี้:",
+    "chips": {
+      "price": "ราคาสกุ๊ตเตอร์สองสัปดาห์เท่าไร่คะ?",
+      "delivery": "ส่งที่บางเทาฟรีจริงไหมคะ แล้วเงินมัดจำเท่าไร่?",
+      "booking": "อยากจองรถค่ะ"
+    },
+    "priceAnswer": "{model} เช่า {days} วัน: {total} ({daily} ฿/วัน) รวมหมวกกันน็อก 2 ใบ เสื้อกันฝน 2 ตัว ที่วางโทรศัพท์ และประกันภัยผู้ขับขี่+ผู้โดยสาร จัดส่งประมาณ 60 นาที (เดโม)",
+    "deliveryAnswer": "จัดส่งฟรีทั่วภูเก็ต ในพื้นที่บางเทาสัญญาส่งรถถึงที่ประมาณ 60 นาที (หน้า Bang Tao ของเว็บเขา) จำนวนเงินมัดจำไม่ได้ระบุบนเว็บไซต์ของเขา และผมจะไม่เดา เงื่อนไขเงินมัดจำผู้จัดการจะยืนยันตอนจอง ผมบันทึกเป็นคำถามค้างไว้ในบัตรจองของคุณแล้ว (เดโม)",
+    "typing": "เอเจนต์กำลังพิมพ์",
+    "caption": "ตอบใน {t} วินาที นอกเวลาทำการ 09:00-21:00 คำตอบนี้จะต้องรอจนถึงเช้า (เดโม)",
+    "composerPlaceholder": "พิมพ์คำถาม: ราคา, จัดส่ง+มัดจำ, จองรถ",
+    "send": "ส่ง",
+    "restart": "ถามอย่างอื่น",
+    "keywords": {
+      "price": [
+        "ราคา",
+        "เท่าไร่",
+        "เท่าใด",
+        "กี่บาท",
+        "ค่าเช่า",
+        "สัปดาห์",
+        "วัน"
+      ],
+      "delivery": [
+        "มัดจำ",
+        "จัดส่ง",
+        "ส่ง",
+        "ฟรี",
+        "โซน"
+      ],
+      "booking": [
+        "จอง",
+        "เช่า",
+        "ต้องการ"
+      ]
+    },
+    "booking": {
+      "intro": "มาจองกันเลย ผมจะเก็บข้อมูล โซน วันที่ และรุ่นรถ ตรวจความว่าง (ในเดโมคือ SAMPLE stock) แล้วส่งบัตรจองที่สมบูรณ์ให้ผู้จัดการเพียงใบเดียว เดโมนี้ไม่ได้ส่งข้อมูลไป Luckyrent จริง (เดโม)",
+      "askZone": "ต้องการรถในโซนไหนครับ?",
+      "askDates": "เลือกวันที่ เริ่มได้เร็วสุดคือพรุ่งนี้ (เวลาภูเก็ต) วันสุดท้ายคือวันคืนรถ ไม่นับเป็นวันเช่า",
+      "askModel": "เลือกรุ่นรถ ราคาที่แสดงคือเรท 7 วันจริงจากเว็บของเขา",
+      "datesInvalid": "กรุณาเลือกวันเริ่มตั้งแต่พรุ่งนี้เป็นต้นไป และวันสุดท้ายต้องหลังจากวันเริ่ม",
+      "dateStart": "วันเริ่ม",
+      "dateEnd": "วันคืนรถ",
+      "dateHint": "เร็วสุด: พรุ่งนี้ (เวลาภูเก็ต)",
+      "confirmDates": "ยืนยันวันที่",
+      "conflict": "{model} ไม่มีคันว่างใน {zone} ช่วง {start} → {end} ชนกับรายการจองตัวอย่าง {refs} (SAMPLE stock จำลอง) รุ่นที่ว่างใน {zone} ช่วงนี้: {alts} (เดโม)",
+      "noAlts": "ไม่มีรุ่นใดว่างใน {zone} ช่วงนี้ตาม SAMPLE stock ลองวันอื่นดู ในระบบจริงจะมีคนมารับ่อนตรงนี้ (เดโม)",
+      "handedOk": "เสร็จแล้ว บุ้กกิ้งที่สมบูรณ์ไปอยู่ในกล่องขาเข้าของเจ้าของร้าน มีบันทึก audit ด้วย ผู้จัดการได้รับบัตรจองกับคำถามค้าง ไม่ใช่แชทดิบ",
+      "inboxSummary": "ส่งต่อจากแชทเดโม: {model} {zone} {start} → {end} ({days} วัน {total})",
+      "inboxReply": "บัตรจองสมบูรณ์ คำถามค้าง: เงื่อนไขมัดจำ (ผู้จัดการยืนยัน)",
+      "daysShort": "วัน"
+    },
+    "zones": {
+      "bang-tao": "บางเทา",
+      "kamala": "กมลา",
+      "rawai": "ราไวย์",
+      "phuket": "ทั่วภูเก็ต"
+    },
+    "card": {
+      "finished": "บุ้กกิ้งสำเร็จ",
+      "ref": "เลขที่",
+      "zone": "โซน",
+      "model": "รุ่น",
+      "dates": "วันที่",
+      "days": "จำนวนวัน",
+      "total": "รวม",
+      "included": "รวมอยู่แล้ว",
+      "delivery": "ช่วงเวลาจัดส่ง",
+      "openQuestions": "คำถามค้าง",
+      "hand": "ส่งต่อให้ผู้จัดการ",
+      "handed": "ส่งต่อให้ผู้จัดการแล้ว",
+      "openInbox": "เปิดกล่องขาเข้าของเจ้าของร้าน",
+      "demoReason": "เดโม · จำลองเพื่อการสาธิต",
+      "formulaNote": "สูตร",
+      "includedValue": "หมวกกันน็อก 2 ใบ · เสื้อกันฝน 2 ตัว · ที่วางโทรศัพท์ · ประกันภัยผู้ขับขี่+ผู้โดยสาร (หน้าเว็บของเขา)",
+      "deliveryValue": "ประมาณ 60 นาทีถึงที่ของคุณ จัดส่งทั่วภูเก็ต (หน้า Bang Tao + หน้าแรกของเว็บเขา)",
+      "depositQuestion": "จำนวนและเงื่อนไขเงินมัดจำ: ผู้จัดการยืนยันตอนจอง (ไม่ได้ระบุบนเว็บไซต์)"
+    },
+    "askPriceQuestion": "{model} เช่า {days} วันเท่าไหร่คะ?"
+  }
+}
